@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'data'
 ]
 
 MIDDLEWARE = [
@@ -75,14 +76,17 @@ WSGI_APPLICATION = 'mypro.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'djongo',
+        'NAME': 'tetra',
+        'HOST':'mongodb+srv://chidu:chidu@cluster0-ccngx.mongodb.net/test?retryWrites=true&w=majority',
+        'USER':'chidu',
+        'PASSWORD':'chidu',
     }
 }
 
 
 # Password validation
-# https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
+# https://docs.djangoproject.com/en/3.0/ref/settings/#a uth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
