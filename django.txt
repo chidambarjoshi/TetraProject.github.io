@@ -1,0 +1,24 @@
+pip freeze // to check the intalled pakages
+
+ pip install virtualenv // in install virtual environment
+
+python -m venv venv1 // to create the vartual environment with name venv1
+
+source venv/scripts/activte // activate the vartual environment
+pip intall django // to install django 
+
+
+deactivate // to deactivate the virtual environment
+
+
+django-admin.py startproject weather // to start new project with project name weather
+
+now change to the directory weather  and  type following command to run the server
+python mange.py runserver
+you shoud be in weather drirectory where manage.py exists
+create start app with name lookup
+python manage.py startapp lookup
+
+
+
+
