@@ -11,12 +11,12 @@ pip intall django // to install django
 deactivate // to deactivate the virtual environment
 
 
-django-admin.py startproject weather // to start new project with project name weather
+django-admin startproject weather // to start new project with project name weather
 
-now change to the directory weather  and  type following command to run the server
+//now change to the directory weather  and  type following command to run the server
 python mange.py runserver
-you shoud be in weather drirectory where manage.py exists
-create start app with name lookup
+//you shoud be in weather drirectory where manage.py exists
+//create start app with name lookup
 python manage.py startapp lookup
 
 
