@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.storage.CompressedManifestStaticFilesStorage'
+    
 ]
 
 ROOT_URLCONF = 'mypro.urls'
@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'mypro.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'tetra',
+        'NAME': 'student_db',
         'HOST':'mongodb+srv://chidu:chidu@cluster0-ccngx.mongodb.net/test?retryWrites=true&w=majority',
         'USER':'chidu',
         'PASSWORD':'chidu',
-        
+
     }
 }
 
